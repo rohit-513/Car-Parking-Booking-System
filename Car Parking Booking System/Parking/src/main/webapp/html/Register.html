@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+  <title>Register Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/Register.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+  <script src="../js/Register.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">
+        <p>Car Parking Booking System</p>
+    </div>
+    <ul>
+        <li ><a href="home.html">Home</a></li>
+        <li class="active"><a href="Register.html">SignUp</a></li>
+        <li><a href="Login.html">Login</a></li>
+    </ul>
+  </nav>   
+  
+  		<div>
+  			<div id="loader" class="center" style="display:none;"></div> 		 
+			 		
+  		</div>
+
+       <div class="container"> 
+            <div style ="display:none;
+                         color:green;
+                         text-align : center; 
+                         font-weight : bold;" id="Success-div">
+                         Register Successful 
+            </div>    
+            <div style ="display:none;
+                         color:red;
+                         text-align : center; 
+                         font-weight : bold;" id="alreadyRegistered-div">
+                         User is already Registered with given email id.
+             </div>    
+             <div style ="display:none; 
+                          color:red;
+                          text-align : center; 
+                          font-weight : bold;" id="form-error-div">
+                          Please correct all below errors and then try submitting the form. 
+             </div>    
+            <h1>Registration Form</h1>
+               <div class="form-container">
+                     <form  id="registration"> 
+                                  
+                  <!-- -----------------------------------------------User Name ---------------------->
+                          <div class="input-name">
+                            <i class="fa fa-user lock" ></i>
+                            <input type="text" placeholder="User Name"  class="text-name" name="Uname" id="Uname">
+                          </div>
+                    <!-- ----------------------------------------------  Email ---------------------->
+                          <div class="input-name">
+                            <i class="fa fa-envelope email" ></i>
+                            <input type="text" placeholder="Email"  class="text-name" name="email" id="email" >
+                          </div>
+                     <!-- -----------------------------------------------Phone Number ---------------------->
+                          <div class="input-name">
+                            <i class="fa fa-phone-square phone " ></i>
+                            <input type="text" placeholder="Phone Number"  class="text-name" name="number" id="number" >
+                          </div>
+                      <!-- -----------------------------------------------Password ---------------------->
+                          <div class="input-name">
+                            <i  class="fa fa-lock lock" aria-hidden="true"></i>
+                            <input type="password" placeholder="Password" class="text-name" name="pass" id="pass">  
+
+                            <i  id="eye" class="fa fa-eye" 
+                            style="margin-top : -37px;
+                                       float : right;
+                                       cursor: pointer;
+                                       margin-right: 0px;
+                                       position: relative;
+                                       border-left:1px solid silver ;
+                                       padding: 9px 10px;"></i>                                             
+                          </div>                                   
+                      <!-- -----------------------------------------------Confirm Password--------------->
+                          <div class="input-name">
+                            <i class="fa fa-lock lock" aria-hidden="true"></i>
+                            <input type="password" placeholder="Confirm Password" class="text-name"  name="Cpass" id="Cpass">  
+
+                            <i  id="Ceye" class="fa fa-eye"
+                               style="margin-top : -37px;
+                               float : right;
+                               cursor: pointer;
+                               margin-right: 0px;
+                               position: relative;
+                               border-left:1px solid silver ;
+                               padding: 9px 10px;"></i>                          
+                          </div>
+
+                       <!-- -----------------------------------------------Gender ---------------------->
+                          <div class="input-name" id="gender">
+                            <input value="Male" type="radio"  class="radio-button"  name="RadioButton" id="Radio1">
+                            <label style="margin-right: 30px;">Male</label>
+
+                            <input value="Female" type="radio" class="radio-button"  name="RadioButton" id="Radio2">
+                            <label>Female</label>
+
+                          </div>
+                       <!-- -----------------------------------------------Submit ---------------------->   
+                          <div class="input-name">
+                             <input type="button"  class="button" value="Register" id="register-button">
+                          </div>
+                          
+                      
+                     </form>
+               </div>
+       </div>
+</body>
+
+
+</html>

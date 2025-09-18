@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="../css/Login.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>    
+  	<script src="../js/login.js"></script>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+        <p>Car Parking Booking System</p>
+    </div>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Register.html">SignUp</a></li>
+        <li class="active"><a href="Login.html">Login</a></li>
+    </ul>
+  </nav>   
+
+    <div class="center">
+    <div style ="color:red;
+                 display:none;
+                 text-align : center; 
+                 font-weight : bold;" id="invalid-user-div">
+                  Email ID or Password is Wrong Please Register !!!!</div>
+            <h1>Login</h1>
+                 <form>
+
+                       <div class="txt_field">
+                           <input type="text"  name="email"  required id ="userId">
+                           <label>Email</label>
+                       </div>
+
+                      <div class="txt_field">
+                           <input type="password" name="password"  required id="password">
+                           <label>Password</label>
+                      </div>
+
+
+                          <input type="button" class="button" value="Login" id="login-button">
+
+                      <div class="signup_link">
+                             Not a member? <a href="Register.html">Register</a>
+                      </div>
+
+                 </form> 
+    </div>    
+</body>
+</html>
